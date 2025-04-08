@@ -636,7 +636,7 @@ svg12El.selectAll("rect")
 	</p>
 </section>
 
-<section class="title-screen" style="background-image: url('src/pic/1.jpg');">
+<section class="title-screen" style="background-image: url('/pic/1.jpg');">
 	<div class="title-container">
 		<h1 class="art-title">Thank You</h1>
 		<p class="art-title1">I can't say too much due to regulations, but I really appreciate the hard work of my first year professors and will consider this year's experience as my most precious treasure. The road ahead will be long and tough, but I just want to smile and enjoy the sunshine that georgetown has given me.❥</p>
@@ -730,7 +730,7 @@ svg12El.selectAll("rect")
 		justify-content: center;
 		text-align: center;
 		padding: 2rem;
-		background-image: url("src/pic/Aid-Worker.jpg");
+		background-image: url("/pic/Aid-Worker.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
