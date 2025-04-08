@@ -1,6 +1,7 @@
 import adapterStatic from "@sveltejs/adapter-static";
 import { sveltePreprocess } from "svelte-preprocess";
 import autoprefixer from "autoprefixer";
+import adapter from '@sveltejs/adapter-vercel';
 
 const preprocess = sveltePreprocess({
 	postcss: {
@@ -14,12 +15,13 @@ const config = {
 	},
 	preprocess,
 	kit: {
-		adapter: adapterStatic({ strict: false }),
-		prerender: {
-			entries: ['*'],
-			handleMissingId: 'warn' // ✅ 忽略不存在的锚点错误
-		}
+		adapter: adapterStatic({ strict: false })
 	}
 };
 
-export default config;
+export default {
+	kit: {
+		adapter: adapter({
+		})
+	}
+};
