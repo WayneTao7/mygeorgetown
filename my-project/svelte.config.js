@@ -1,22 +1,13 @@
-import adapterStatic from "@sveltejs/adapter-static";
-import { sveltePreprocess } from "svelte-preprocess";
-import autoprefixer from "autoprefixer";
-
-const preprocess = sveltePreprocess({
-	postcss: {
-		plugins: [autoprefixer]
-	}
-});
+import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
 const config = {
-	compilerOptions: {
-		runes: true
-	},
-	preprocess,
+	preprocess: vitePreprocess(),
 	kit: {
-		adapter: adapterStatic({ strict: false })
+		adapter: adapter({
+			fallback: 'index.html'
+		})
 	}
 };
 
 export default config;
-
