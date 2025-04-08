@@ -382,7 +382,7 @@ svg12El.selectAll("rect")
 <section class="title-screen">
 	<div class="title-container">
 		<div class="wordmark">
-			<img src="src/svg/image-removebg-preview.svg" alt="School Logo" />
+			<img src="/svg/image-removebg-preview.svg" alt="School Logo" />
 		</div>
 		<h1 class="art-title">DSAN 2025</h1>
 		<p class="art-title1">In the name of aid, between life and death</p>
