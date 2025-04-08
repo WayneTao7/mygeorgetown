@@ -1,0 +1,127 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_paths.js"
+    ]
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "name": "index"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_index.js",
+      "_paths.js"
+    ]
+  },
+  "_paths.js": {
+    "file": "chunks/paths.js",
+    "name": "paths"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_paths.js",
+      "_exports.js",
+      "_internal.js"
+    ]
+  },
+  "src/routes/+error.svelte": {
+    "file": "entries/pages/_error.svelte.js",
+    "name": "entries/pages/_error.svelte",
+    "src": "src/routes/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_exports.js"
+    ]
+  },
+  "src/routes/+layout.js": {
+    "file": "entries/pages/_layout.js",
+    "name": "entries/pages/_layout",
+    "src": "src/routes/+layout.js",
+    "isEntry": true
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "css": [
+      "_app/immutable/assets/_layout.BFjIvmdV.css"
+    ]
+  },
+  "src/routes/+page.server.js": {
+    "file": "entries/pages/_page.server.js",
+    "name": "entries/pages/_page.server",
+    "src": "src/routes/+page.server.js",
+    "isEntry": true
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CXTVBJNh.css"
+    ]
+  },
+  "src/routes/demo/+page.svelte": {
+    "file": "entries/pages/demo/_page.svelte.js",
+    "name": "entries/pages/demo/_page.svelte",
+    "src": "src/routes/demo/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BbtFu9-w.css"
+    ]
+  },
+  "src/routes/demo/elements/+page.svelte": {
+    "file": "entries/pages/demo/elements/_page.svelte.js",
+    "name": "entries/pages/demo/elements/_page.svelte",
+    "src": "src/routes/demo/elements/+page.svelte",
+    "isEntry": true,
+    "css": [
+      "_app/immutable/assets/_page.BosP74pi.css"
+    ]
+  },
+  "src/routes/demo/fonts/+page.svelte": {
+    "file": "entries/pages/demo/fonts/_page.svelte.js",
+    "name": "entries/pages/demo/fonts/_page.svelte",
+    "src": "src/routes/demo/fonts/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_paths.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.B-mGqUsL.css"
+    ]
+  },
+  "src/routes/demo/ig-story/+page.svelte": {
+    "file": "entries/pages/demo/ig-story/_page.svelte.js",
+    "name": "entries/pages/demo/ig-story/_page.svelte",
+    "src": "src/routes/demo/ig-story/+page.svelte",
+    "isEntry": true
+  }
+}
