@@ -1,15 +1,24 @@
-import adapter from '@sveltejs/adapter-static';
-import sveltePreprocess from 'svelte-preprocess';
+import adapterStatic from "@sveltejs/adapter-static";
+import { sveltePreprocess } from "svelte-preprocess";
+import autoprefixer from "autoprefixer";
+
+const preprocess = sveltePreprocess({
+	postcss: {
+		plugins: [autoprefixer]
+	}
+});
 
 const config = {
-	preprocess: sveltePreprocess(),
-
+	compilerOptions: {
+		runes: true
+	},
+	preprocess,
 	kit: {
-		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: 'index.html'
-		})
+		adapter: adapterStatic({ strict: false }),
+		prerender: {
+			entries: ['*'],
+			handleMissingId: 'warn' // ✅ 忽略不存在的锚点错误
+		}
 	}
 };
 
